@@ -1,0 +1,28 @@
+@(message: String)
+
+@main("InfraSIS - Auto de Infração - Cadastrar") {
+
+	<h3>Cadastrar Auto de Infração</h3>
+   <form>
+		<div class="row">
+			  <div class="form-group col-md-6">
+			    <label for="numero">Número do Auto de Infração  *</label>
+			    <input required type="text" class="form-control" id="numero" placeholder="Número">
+			  </div>
+	   		</div>
+			<div class="row">
+			 <div class="form-group col-md-6">
+			  <label for="data">Data do Auto de Infração  *</label>
+			  <input required type="date" class="form-control" id="data" placeholder="Data">
+			</div>
+		</div>
+		  <div class="form-group">
+		    <label for="arquivo">Arquivo *</label>
+		    <input required type="file" id="arquivo">
+		  </div>
+		  <center>
+			  <button type="submit" class="btn btn-default">Cadastrar</button>
+		  </center>
+	</form>
+
+}
